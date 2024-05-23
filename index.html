@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- Font Awesome CSS  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <!-- Calendar Style CSS -->
+    <link rel="stylesheet" href="css/anna1.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"></h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <h1>Do you want to give up Today's tasks?</h1>
+                    <h2>You will lose a ? days streak💦</h2>
+                    <div class="choice">
+                        <a href="#yes">
+                            <h3 class="yes">YES</h3>
+                        </a>
+                        <a href="#no">
+                            <h3 class="no">NO</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#openModal">Открыть модальное окно</a> -->
+    <div class="calendar-wrapper">
+        <div class="calendar">
+            <!-- <button id="btnPrev" type="button">Предыдущий</button> -->
+            <div>
+                <div class="flex-item flex-block custom-checkbox">
+                    <ul id="todo" class="todo-list js-todo-list"></ul>
+                </div>
+                <div class="input-container">
+                    <form>
+                        <input type="text" class="js-todo-input custom-input" placeholder="to-do">
+                    </form>
+                </div>
+                <div class="click">
+                    <a id="btnNext" href="#openModal"><img src="img/click.png" style="width: 100px;"></a>
+                </div>
+                <div id="divCal"></div>
+
+            </div>
+
+            <!-- <button id="btnNext" data-key="#openModal" type="button">Следующий</button> -->
+        </div>
+    </div>
+    <script src="js/anna_modal.js"></script>
+    <script src="js/anna1.js"></script>
+</body>
+
+</html>

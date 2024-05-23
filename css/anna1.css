@@ -1,0 +1,50 @@
+.calendar-wrapper {
+  width: 600px;
+  display: flex;
+  margin: 3em auto;
+  padding: 2em;
+  border-radius: 5px;
+  background: #fff;
+}
+
+
+.todo-list {
+  list-style: none;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.todo-item {
+  display: flex;
+  font-family: "Jockey One", sans-serif, "Dela Gothic One", sans-serif;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.tick {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 15px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
